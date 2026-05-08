@@ -516,7 +516,7 @@ transition: all 0.2s;
   }
 
   async function callClaude(userMessage, systemPrompt) {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://solitary-water-e8b4.dmancha704.workers.dev", {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-api-key": "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", "anthropic-version": "2023-06-01" },
       body: JSON.stringify({
@@ -591,7 +591,7 @@ transition: all 0.2s;
     chatHistory.push({ role: "user", content: userText });
 
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("https://solitary-water-e8b4.dmancha704.workers.dev", {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-api-key": "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", "anthropic-version": "2023-06-01" },
         body: JSON.stringify({
